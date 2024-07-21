@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: BankApp
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bank_app
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 9090
